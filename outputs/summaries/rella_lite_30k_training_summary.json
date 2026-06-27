@@ -1,0 +1,31 @@
+{
+  "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "source_adapter_dir": "/kaggle/input/datasets/lllezz/qwen-rella-lite-continued-20k",
+  "source_adapter_stage": "rella_lite_continued_20k",
+  "source_dataset": "/kaggle/input/datasets/lllezz/final-instruction-temporal-retrieved-topk/train.jsonl",
+  "dataset": "instruction_temporal_retrieved_topk",
+  "first_per_class": 5000,
+  "second_per_class": 5000,
+  "new_per_class": 5000,
+  "new_train_examples": 10000,
+  "total_exposed_examples_estimate": 30000,
+  "num_epochs_on_new_chunk": 1,
+  "learning_rate": 0.0001,
+  "max_seq_length": 1024,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "chunk_diagnostics": {
+    "first_yes": 5000,
+    "first_no": 5000,
+    "second_yes": 5000,
+    "second_no": 5000,
+    "new_third_yes": 5000,
+    "new_third_no": 5000,
+    "remaining_yes_after_previous_20k": 30000,
+    "remaining_no_after_previous_20k": 30000,
+    "sample_id_overlap_with_previous_20k": 0,
+    "new_unique_sample_ids": 10000
+  },
+  "output_adapter_dir": "/kaggle/working/qwen_rella_lite_continue_new10000_from20k_no_eval/adapter_qwen_rella_lite_continued_30k",
+  "adapter_zip": "/kaggle/working/qwen_rella_lite_continue_new10000_from20k_no_eval/adapter_qwen_rella_lite_continued_30k.zip"
+}

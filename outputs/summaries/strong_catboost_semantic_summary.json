@@ -1,0 +1,72 @@
+{
+  "task": "strong_catboost_plus_semantic",
+  "base_feature_key": "manual_clean_safe_features_plus_train_only_popularity",
+  "base_feature_count": 20,
+  "semantic_features": [
+    "semantic_target_liked_cosine",
+    "semantic_target_disliked_cosine",
+    "semantic_similarity_gap",
+    "semantic_max_liked_cosine",
+    "semantic_max_disliked_cosine",
+    "semantic_top3_liked_mean_cosine",
+    "semantic_top3_disliked_mean_cosine"
+  ],
+  "plus_semantic_feature_count": 27,
+  "metrics": [
+    {
+      "method": "strong_catboost_original_features",
+      "split": "val",
+      "roc_auc": 0.8062696799999999,
+      "pr_auc": 0.7998769311958391,
+      "accuracy": 0.7117,
+      "precision": 0.6650038971161341,
+      "recall": 0.8532,
+      "f1": 0.747437582128778,
+      "threshold": 0.37,
+      "n_features": 20
+    },
+    {
+      "method": "strong_catboost_original_features",
+      "split": "test",
+      "roc_auc": 0.7820822799999999,
+      "pr_auc": 0.7714812509895457,
+      "accuracy": 0.6793,
+      "precision": 0.6300217548948513,
+      "recall": 0.8688,
+      "f1": 0.730390920554855,
+      "threshold": 0.37,
+      "n_features": 20
+    },
+    {
+      "method": "strong_catboost_plus_semantic",
+      "split": "val",
+      "roc_auc": 0.8066616799999999,
+      "pr_auc": 0.8017271714589949,
+      "accuracy": 0.715,
+      "precision": 0.6713420465412815,
+      "recall": 0.8424,
+      "f1": 0.7472059606173497,
+      "threshold": 0.38,
+      "n_features": 27
+    },
+    {
+      "method": "strong_catboost_plus_semantic",
+      "split": "test",
+      "roc_auc": 0.78294236,
+      "pr_auc": 0.769504725490361,
+      "accuracy": 0.6855,
+      "precision": 0.6372650584578955,
+      "recall": 0.8612,
+      "f1": 0.7324997873607213,
+      "threshold": 0.38,
+      "n_features": 27
+    }
+  ],
+  "outputs": {
+    "metrics": "F:\\Coursework\\outputs\\semantic_strong_catboost\\metrics_strong_catboost_semantic.csv",
+    "models": [
+      "F:\\Coursework\\outputs\\semantic_strong_catboost\\strong_catboost_original_features.cbm",
+      "F:\\Coursework\\outputs\\semantic_strong_catboost\\strong_catboost_plus_semantic.cbm"
+    ]
+  }
+}

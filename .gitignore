@@ -1,0 +1,60 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+.cache/
+.pip_cache/
+.tmp/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large local data and generated datasets
+data/
+archive/
+*.parquet
+*.jsonl
+*.feather
+*.h5
+*.hdf5
+*.sqlite
+*.db
+
+# Model weights, checkpoints, and binary training artifacts
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.cbm
+*.npy
+*.npz
+**/checkpoint*/
+**/checkpoints/
+**/adapter/
+**/adapters/
+**/raw_export/
+
+# Archives and large generated outputs
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+**/*prediction*.csv
+**/*predictions*.csv
+
+# HuggingFace and experiment caches
+huggingface/
+models--*/
+wandb/
+mlruns/
+runs/

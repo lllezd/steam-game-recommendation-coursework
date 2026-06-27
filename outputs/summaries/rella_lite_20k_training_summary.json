@@ -1,0 +1,23 @@
+{
+  "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "source_adapter_dir": "/kaggle/input/datasets/lllezz/qwen-rella-lite-train10000-adapter/trainer/checkpoint-750",
+  "source_dataset": "/kaggle/input/datasets/lllezz/final-instruction-temporal-retrieved-topk/train.jsonl",
+  "dataset": "instruction_temporal_retrieved_topk",
+  "previous_per_class": 5000,
+  "new_per_class": 5000,
+  "new_train_examples": 10000,
+  "total_exposed_examples_estimate": 20000,
+  "num_epochs_on_new_chunk": 1,
+  "learning_rate": 0.0001,
+  "max_seq_length": 1024,
+  "chunk_diagnostics": {
+    "previous_yes": 5000,
+    "previous_no": 5000,
+    "new_yes": 5000,
+    "new_no": 5000,
+    "remaining_yes_after_old": 35000,
+    "remaining_no_after_old": 35000,
+    "sample_id_overlap_with_previous": 0
+  },
+  "output_adapter_dir": "/kaggle/working/qwen_rella_lite_continue_new10000_from10k_no_eval/adapter_qwen_rella_lite_continued_20k"
+}

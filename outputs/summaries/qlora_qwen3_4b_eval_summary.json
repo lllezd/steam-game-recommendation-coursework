@@ -1,0 +1,32 @@
+{
+  "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "adapter_dir": "/kaggle/input/datasets/lllezz/checkpoint-2500-qlora",
+  "eval_per_class": 1000,
+  "max_seq_length": 1024,
+  "compute_val": true,
+  "manual_threshold": 0.35,
+  "metrics": [
+    {
+      "stage": "qlora_checkpoint",
+      "split": "val_pilot",
+      "roc_auc": 0.7962935,
+      "pr_auc": 0.7923404137570969,
+      "accuracy": 0.718,
+      "precision": 0.6831932773109244,
+      "recall": 0.813,
+      "f1": 0.7424657534246575,
+      "threshold": 0.44
+    },
+    {
+      "stage": "qlora_checkpoint",
+      "split": "test_pilot",
+      "roc_auc": 0.795959,
+      "pr_auc": 0.7900838560066099,
+      "accuracy": 0.7145,
+      "precision": 0.6771263418662262,
+      "recall": 0.82,
+      "f1": 0.741745816372682,
+      "threshold": 0.44
+    }
+  ]
+}

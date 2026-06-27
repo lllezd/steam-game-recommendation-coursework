@@ -1,0 +1,14 @@
+numpy
+pandas
+pyarrow
+scikit-learn
+catboost
+sentence-transformers
+torch
+transformers
+accelerate
+peft
+bitsandbytes
+datasets
+tqdm
+jupyter

@@ -1,0 +1,17 @@
+{
+  "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "dataset": "instruction_temporal_retrieved_topk",
+  "train_path": "/kaggle/input/datasets/lllezz/final-instruction-temporal-retrieved-topk/train.jsonl",
+  "val_path": "/kaggle/input/datasets/lllezz/final-instruction-temporal-retrieved-topk/val.jsonl",
+  "test_path": "/kaggle/input/datasets/lllezz/final-instruction-temporal-retrieved-topk/test.jsonl",
+  "train_per_class": 5000,
+  "train_examples": 10000,
+  "eval_per_class": 1000,
+  "val_examples": 2000,
+  "test_examples": 2000,
+  "num_epochs": 1,
+  "learning_rate": 0.0002,
+  "max_seq_length": 1024,
+  "skip_eval": true,
+  "metrics": []
+}

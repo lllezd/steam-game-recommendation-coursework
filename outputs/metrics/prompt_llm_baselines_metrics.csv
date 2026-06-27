@@ -1,0 +1,4 @@
+method,model,eval_type,val_size,test_size,val_parse_rate,test_parse_rate,threshold,val_roc_auc,test_roc_auc,test_pr_auc,test_accuracy,test_precision,test_recall,test_f1,shots
+qwen2_5_1_5b_zero_shot_pilot,Qwen/Qwen2.5-1.5B-Instruct,pilot_stratified,500,500,1.0,1.0,0.0,0.599912,0.484552,0.5079462677679591,0.5,0.5,1.0,0.6666666666666666,
+qwen2_5_3b_zero_shot_pilot,Qwen/Qwen2.5-3B-Instruct,pilot_stratified,500,500,1.0,1.0,0.0,0.511472,0.4752159999999999,0.5053280783377224,0.5,0.5,1.0,0.6666666666666666,
+qwen2_5_3b_few_shot_4_small_pilot,Qwen/Qwen2.5-3B-Instruct,small_pilot_stratified,100,100,1.0,1.0,0.0,0.553,0.44520000000000004,0.4935255425252666,0.5,0.5,1.0,0.6666666666666666,4.0

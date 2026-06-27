@@ -1,0 +1,86 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "num_items": 37610,
+  "embedding_dim": 384,
+  "train_rows": 80000,
+  "val_rows": 10000,
+  "test_rows": 10000,
+  "semantic_features": [
+    "semantic_target_liked_cosine",
+    "semantic_target_disliked_cosine",
+    "semantic_similarity_gap",
+    "semantic_max_liked_cosine",
+    "semantic_max_disliked_cosine",
+    "semantic_top3_liked_mean_cosine",
+    "semantic_top3_disliked_mean_cosine"
+  ],
+  "quick_model_check": true,
+  "metrics": [
+    {
+      "variant": "semantic_only",
+      "split": "val",
+      "roc_auc": 0.7100428999999999,
+      "pr_auc": 0.6776342555831132,
+      "accuracy": 0.6442,
+      "precision": 0.6029117898943762,
+      "recall": 0.8448,
+      "f1": 0.703648175912044,
+      "threshold": 0.37
+    },
+    {
+      "variant": "semantic_only",
+      "split": "test",
+      "roc_auc": 0.6973864000000001,
+      "pr_auc": 0.6562717335960937,
+      "accuracy": 0.6385,
+      "precision": 0.5994256999282125,
+      "recall": 0.835,
+      "f1": 0.6978687839531968,
+      "threshold": 0.37
+    },
+    {
+      "variant": "numeric_safe_without_semantic",
+      "split": "val",
+      "roc_auc": 0.84023512,
+      "pr_auc": 0.8391061934082819,
+      "accuracy": 0.7496,
+      "precision": 0.7113821138211383,
+      "recall": 0.84,
+      "f1": 0.7703595011005135,
+      "threshold": 0.37
+    },
+    {
+      "variant": "numeric_safe_without_semantic",
+      "split": "test",
+      "roc_auc": 0.8185938600000001,
+      "pr_auc": 0.8100447354043293,
+      "accuracy": 0.7153,
+      "precision": 0.6659472791737321,
+      "recall": 0.864,
+      "f1": 0.7521546095586314,
+      "threshold": 0.37
+    },
+    {
+      "variant": "numeric_safe_plus_semantic",
+      "split": "val",
+      "roc_auc": 0.8410643199999999,
+      "pr_auc": 0.8405242558019334,
+      "accuracy": 0.7572,
+      "precision": 0.7289070843716625,
+      "recall": 0.819,
+      "f1": 0.7713317008852891,
+      "threshold": 0.4
+    },
+    {
+      "variant": "numeric_safe_plus_semantic",
+      "split": "test",
+      "roc_auc": 0.81951142,
+      "pr_auc": 0.810961295023907,
+      "accuracy": 0.7249,
+      "precision": 0.6811080689321952,
+      "recall": 0.8458,
+      "f1": 0.7545722187527879,
+      "threshold": 0.4
+    }
+  ]
+}

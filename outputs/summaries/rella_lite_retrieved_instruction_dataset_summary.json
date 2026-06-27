@@ -1,0 +1,36 @@
+{
+  "task": "rella_lite_retrieved_instruction_dataset",
+  "top_k_liked": 5,
+  "top_k_disliked": 5,
+  "source_instruction_dir": "F:\\Coursework\\data\\final\\instruction_temporal",
+  "output_instruction_dir": "F:\\Coursework\\data\\final\\instruction_temporal_retrieved_topk",
+  "splits": [
+    {
+      "split": "train",
+      "rows": 80000,
+      "with_liked_selected": 79320,
+      "with_disliked_selected": 46379,
+      "avg_liked_selected": 4.2806,
+      "avg_disliked_selected": 1.26415,
+      "target_embedding_missing": 0
+    },
+    {
+      "split": "val",
+      "rows": 10000,
+      "with_liked_selected": 9923,
+      "with_disliked_selected": 6235,
+      "avg_liked_selected": 4.4175,
+      "avg_disliked_selected": 1.4731,
+      "target_embedding_missing": 0
+    },
+    {
+      "split": "test",
+      "rows": 10000,
+      "with_liked_selected": 9919,
+      "with_disliked_selected": 6301,
+      "avg_liked_selected": 4.4735,
+      "avg_disliked_selected": 1.5475,
+      "target_embedding_missing": 0
+    }
+  ]
+}
